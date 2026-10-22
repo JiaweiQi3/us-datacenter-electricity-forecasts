@@ -1,0 +1,7 @@
+year,scenario,scenario_original,load_twh,source
+2018,reference_slow,Reference_Slow,3705.7008735114473,NREL_EFS
+2020,reference_slow,Reference_Slow,3801.772339255354,NREL_EFS
+2024,reference_slow,Reference_Slow,3897.772364494802,NREL_EFS
+2030,reference_slow,Reference_Slow,4064.923333680291,NREL_EFS
+2040,reference_slow,Reference_Slow,4400.762410451084,NREL_EFS
+2050,reference_slow,Reference_Slow,4840.632385884002,NREL_EFS

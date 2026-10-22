@@ -1,0 +1,8 @@
+rank,target_year,source,organization,start_year,start_value_TWh,target_value_TWh,growth_multiple,CAGR,CAGR_percent,n_curves_available,n_curves_used,scenario_basis,scenarios_used
+1,2030,McKinsey,McKinsey & Company,2023,147.61,604.38,4.094438046202831,0.22308412462417948,22.308412462417948,1,1,single curve,Medium scenario
+2,2030,EPRI,Electric Power Research Institute,2024,190.14,595.17,3.1301672451877565,0.20946857955030884,20.946857955030886,3,1,base / mid / projected / central case,EPRI Medium
+3,2030,BCG,Boston Consulting Group,2024,325.0,925.0,2.8461538461538463,0.19044607822092408,19.04460782209241,2,2,average of two available curves,High-demand case; Lower/base case
+4,2030,Rhodium,Rhodium Group,2022,151.53500000000003,545.64,3.6007523014485097,0.17367851844426374,17.367851844426376,2,2,average of two available curves,Baseline data center growth; High data center growth
+5,2030,IEA,International Energy Agency,2024,182.68,423.62,2.3189183271294067,0.1504848625280184,15.04848625280184,1,1,single curve,Projected
+6,2030,Jefferies,Jefferies,2024,251.32,525.13,2.0894875059684863,0.13068065835424014,13.068065835424015,1,1,single curve,Projected
+7,2030,BloombergNEF,BloombergNEF,2024,303.43,570.59,1.8804666644695647,0.11099202080363013,11.099202080363014,1,1,single curve,Projected power load

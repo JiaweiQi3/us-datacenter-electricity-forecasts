@@ -1,0 +1,9 @@
+rank,target_year,source,organization,representative_value_TWh,n_curves_available,n_curves_used,scenario_basis,scenarios_used,min_available_TWh,max_available_TWh
+1,2035,BP,British Petroleum,6178.666666666666,2,2,average of two available curves,Below 2°; Current Trajectory,5978.666666666667,6378.666666666666
+2,2035,ICF,ICF International,5597.349999999999,1,1,single curve,Growth-based estimate,5597.349999999999,5597.349999999999
+3,2035,LCRI,Low-Carbon Resources Initiative,5568.14,3,1,base / mid / reference / central case,Central trajectory (dashed line),4729.85,6816.92
+4,2035,Citi,Citigroup,5561.05,1,1,single curve,2.8% CAGR,5561.05,5561.05
+5,2035,S&P Global,S&P Global Commodity Insights,5356.0,2,2,average of two available curves,Outlook range (lower bound); Outlook range (upper bound),5139.0,5573.0
+6,2035,EIA AEO 2026,U.S. Energy Information Administration,4937.11,8,1,base / mid / reference / central case,Counterfactual Baseline case,4775.72,5065.78
+7,2035,NREL EFS,National Renewable Energy Laboratory (EFS Study),4685.115,9,3,base / mid / reference / central case,Medium_Moderate; Medium_Rapid; Medium_Slow,4184.285,5113.285
+8,2035,Princeton,Princeton Net-Zero America Project,4627.51,3,1,base / mid / reference / central case,Mid scenario,4527.23,5446.8

@@ -1,0 +1,7 @@
+rank,target_year,source,organization,representative_value_TWh,n_curves_available,n_curves_used,scenario_basis,scenarios_used,min_available_TWh,max_available_TWh
+1,2050,BP,British Petroleum,8352.0,2,2,average of two available curves,Below 2°; Current Trajectory,7902.0,8802.0
+2,2050,ICF,ICF International,7206.7,1,1,single curve,Growth-based estimate,7206.7,7206.7
+3,2050,LCRI,Low-Carbon Resources Initiative,7136.48,3,1,base / mid / reference / central case,Central trajectory (dashed line),5718.26,9684.52
+4,2050,Princeton,Princeton Net-Zero America Project,6192.41,3,1,base / mid / reference / central case,Mid scenario,5198.4,7453.98
+5,2050,EIA AEO 2026,U.S. Energy Information Administration,5995.21,8,1,base / mid / reference / central case,Counterfactual Baseline case,5677.58,6469.61
+6,2050,NREL EFS,National Renewable Energy Laboratory (EFS Study),5827.196666666667,9,3,base / mid / reference / central case,Medium_Moderate; Medium_Rapid; Medium_Slow,4760.36,7062.43

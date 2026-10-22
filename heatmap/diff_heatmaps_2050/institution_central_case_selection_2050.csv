@@ -1,0 +1,7 @@
+source,central_label,selected_scenario,central_TWh,selection_method
+NREL EFS,NREL EFS,Medium_Moderate,5798.92,selected central/base scenario
+EIA AEO 2026,EIA AEO 2026,Counterfactual Baseline case,5995.21,selected central/base scenario
+Princeton,Princeton,Mid scenario,6192.41,selected central/base scenario
+LCRI,LCRI,Central trajectory (dashed line),7136.48,selected central/base scenario
+ICF,ICF,Growth-based estimate,7206.7,selected central/base scenario
+BP,BP,Current Trajectory,7902.0,selected central/base scenario

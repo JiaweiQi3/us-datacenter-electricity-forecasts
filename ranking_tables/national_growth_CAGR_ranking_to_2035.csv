@@ -1,0 +1,9 @@
+rank,target_year,source,organization,start_year,start_value_TWh,target_value_TWh,growth_multiple,CAGR,CAGR_percent,n_curves_available,n_curves_used,scenario_basis,scenarios_used
+1,2035,Citi,Citigroup,2025,4219.16,5561.05,1.3180467202002295,0.027999919088404823,2.7999919088404823,1,1,single curve,2.8% CAGR
+2,2035,BP,British Petroleum,2023,4440.0,6178.666666666666,1.3915915915915915,0.02792000052259236,2.792000052259236,2,2,average of two available curves,Below 2°; Current Trajectory
+3,2035,ICF,ICF International,2023,4048.7,5597.349999999999,1.3825054955911773,0.027359021333425826,2.7359021333425826,1,1,single curve,Growth-based estimate
+4,2035,S&P Global,S&P Global Commodity Insights,2024,4170.0,5356.0,1.2844124700239807,0.023015534405851357,2.3015534405851357,2,2,average of two available curves,Outlook range (lower bound); Outlook range (upper bound)
+5,2035,LCRI,Low-Carbon Resources Initiative,2020,4000.0,5568.14,1.3920350000000001,0.022296036452566836,2.2296036452566836,3,1,base / mid / reference / central case,Central trajectory (dashed line)
+6,2035,EIA AEO 2026,U.S. Energy Information Administration,2025,4298.27,4937.11,1.1486272384005656,0.013953202131854026,1.3953202131854026,8,1,base / mid / reference / central case,Counterfactual Baseline case
+7,2035,NREL EFS,National Renewable Energy Laboratory (EFS Study),2018,3710.6200000000003,4685.115,1.2626232273851807,0.013811657771115815,1.3811657771115815,9,3,base / mid / reference / central case,Medium_Moderate; Medium_Rapid; Medium_Slow
+8,2035,Princeton,Princeton Net-Zero America Project,2020,4122.63,4627.51,1.1224655135192827,0.007731576618117408,0.7731576618117408,3,1,base / mid / reference / central case,Mid scenario

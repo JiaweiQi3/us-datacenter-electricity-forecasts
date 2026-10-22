@@ -1,0 +1,10 @@
+source,central_label,selected_scenario,central_TWh,selection_method
+NREL EFS,NREL EFS,Medium_Moderate,4284.74,selected central/base scenario
+Princeton,Princeton,Mid scenario,4428.29,selected central/base scenario
+EIA AEO 2026,EIA AEO 2026,Counterfactual Baseline case,4562.01,selected central/base scenario
+LCRI,LCRI,Central trajectory (dashed line),4827.55,selected central/base scenario
+Citi,Citi,2.8% CAGR,4843.86,selected central/base scenario
+S&P Global,S&P Global,low-high midpoint,4852.0,low-high midpoint
+IEA,IEA,Derived from per capita + YoY growth,4880.5,selected central/base scenario
+ICF,ICF,Growth-based estimate,5060.9,selected central/base scenario
+BP,BP,Current Trajectory,5337.555555555556,selected central/base scenario

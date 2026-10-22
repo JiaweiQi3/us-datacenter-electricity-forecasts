@@ -1,0 +1,8 @@
+rank,target_year,source,organization,representative_value_TWh,n_curves_available,n_curves_used,scenario_basis,scenarios_used,min_available_TWh,max_available_TWh
+1,2030,BCG,Boston Consulting Group,925.0,2,2,average of two available curves,High-demand case; Lower/base case,800.0,1050.0
+2,2030,McKinsey,McKinsey & Company,604.38,1,1,single curve,Medium scenario,604.38,604.38
+3,2030,EPRI,Electric Power Research Institute,595.17,3,1,base / mid / projected / central case,EPRI Medium,383.9,790.74
+4,2030,BloombergNEF,BloombergNEF,570.59,1,1,single curve,Projected power load,570.59,570.59
+5,2030,Rhodium,Rhodium Group,545.64,2,2,average of two available curves,Baseline data center growth; High data center growth,436.36,654.92
+6,2030,Jefferies,Jefferies,525.13,1,1,single curve,Projected,525.13,525.13
+7,2030,IEA,International Energy Agency,423.62,1,1,single curve,Projected,423.62,423.62

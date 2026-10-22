@@ -1,0 +1,7 @@
+year,scenario,scenario_original,load_twh,source
+2018,medium_moderate,Medium_Moderate,3711.334117805869,NREL_EFS
+2020,medium_moderate,Medium_Moderate,3814.3733727485474,NREL_EFS
+2024,medium_moderate,Medium_Moderate,3942.2365864370086,NREL_EFS
+2030,medium_moderate,Medium_Moderate,4284.744092135882,NREL_EFS
+2040,medium_moderate,Medium_Moderate,5062.260716167445,NREL_EFS
+2050,medium_moderate,Medium_Moderate,5798.91681256672,NREL_EFS

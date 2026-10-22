@@ -1,0 +1,8 @@
+source,central_label,selected_scenario,central_TWh,selection_method
+IEA,IEA,Projected,423.62,selected central/base scenario
+Jefferies,Jefferies,Projected,525.13,selected central/base scenario
+Rhodium,Rhodium,low-high midpoint,545.64,low-high midpoint
+BloombergNEF,BloombergNEF,Projected power load,570.59,selected central/base scenario
+EPRI,EPRI,EPRI Medium,595.17,selected central/base scenario
+McKinsey,McKinsey,Medium scenario,604.38,selected central/base scenario
+BCG,BCG,low-high midpoint,925.0,low-high midpoint

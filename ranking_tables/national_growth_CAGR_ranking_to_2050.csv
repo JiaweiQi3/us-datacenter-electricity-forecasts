@@ -1,0 +1,7 @@
+rank,target_year,source,organization,start_year,start_value_TWh,target_value_TWh,growth_multiple,CAGR,CAGR_percent,n_curves_available,n_curves_used,scenario_basis,scenarios_used
+1,2050,BP,British Petroleum,2023,4440.0,8352.0,1.8810810810810812,0.02367769689937327,2.367769689937327,2,2,average of two available curves,Below 2°; Current Trajectory
+2,2050,ICF,ICF International,2023,4048.7,7206.7,1.7800034579000668,0.02158579653155268,2.158579653155268,1,1,single curve,Growth-based estimate
+3,2050,LCRI,Low-Carbon Resources Initiative,2020,4000.0,7136.48,1.78412,0.019484910339195194,1.9484910339195194,3,1,base / mid / reference / central case,Central trajectory (dashed line)
+4,2050,NREL EFS,National Renewable Energy Laboratory (EFS Study),2018,3710.6200000000003,5827.196666666667,1.5704105154035353,0.014204217807948005,1.4204217807948005,9,3,base / mid / reference / central case,Medium_Moderate; Medium_Rapid; Medium_Slow
+5,2050,Princeton,Princeton Net-Zero America Project,2020,4122.63,6192.41,1.5020533009268355,0.01365347011460516,1.365347011460516,3,1,base / mid / reference / central case,Mid scenario
+6,2050,EIA AEO 2026,U.S. Energy Information Administration,2025,4298.27,5995.21,1.3947960458510051,0.013398899423944233,1.3398899423944233,8,1,base / mid / reference / central case,Counterfactual Baseline case
