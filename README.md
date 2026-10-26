@@ -1,4 +1,4 @@
-![U.S. Data Center Electricity Demand Forecasts Analysis in the Age of AI](assets/cover.png)
+![U.S. Data Center Electricity Demand Forecasts Analysis in the Age of AI](figures/cover.png)
 
 # U.S. Data Center Electricity Demand Forecasts Analysis in the Age of AI
 
@@ -6,7 +6,7 @@ A structured MySQL database and Python analysis that compare how 16 institutions
 
 *Independent study, Carnegie Mellon University, Jan.–May 2026. Advisor: Prof. Costa Samaras.* Full write-up: [`report/US_Data_Center_Load_Forecast_Report.pdf`](report/US_Data_Center_Load_Forecast_Report.pdf)
 
-![U.S. data center electricity demand forecast ranges in 2030](range_plot/dc_forecast_2030_range_plot.png)
+![U.S. data center electricity demand forecast ranges in 2030](figures/range_plot/dc_forecast_2030_range_plot.png)
 
 ## Key findings
 
@@ -37,19 +37,17 @@ The NREL values are aggregated from *Electrification Futures Study Load Profiles
 
 | Path | Contents |
 |---|---|
-| `us_dc_energy_forecast_database.sql` | Schema: 4 tables in a metadata–value design (`forecast_metadata`, `forecast_values`, `dc_forecast_metadata`, `dc_forecast_values`) |
-| `Forecast_SQL/` | One insert script per forecast curve (`01`–`33` national, `001`–`014` data center), the two analysis queries, and the ER diagram (`ERD.mwb`, MySQL Workbench) |
-| `build_database.sh` | Loads the schema and every insert script into MySQL |
-| `NREL_EFS_DataProcessing/` | Aggregates NREL EFS hourly load profiles to annual TWh per scenario |
-| `EFS/result/` | The aggregated NREL EFS annual totals |
-| `trajectory/` | Full and representative forecast trajectories (national and data center), plus data center ranges in 2025, 2028 and 2030 |
-| `range_plot/` | Low / central / high range per institution in benchmark years |
-| `heatmap/` | Pairwise difference heatmaps between institutions and within each institution's scenarios |
-| `ranking_tables/` | Forecast-level and CAGR rankings (CSV and Excel) |
-| `dc_institution.py`, `national_institution.py` | Per-institution appendix figures (`appendix_*_trends/`) |
-| `connect.py` | Checks that `DC_FORECAST_DB_URL` reaches the database |
-| `requirements.txt` | Python dependencies |
 | `report/` | Final report (PDF) |
+| `figures/trajectory/` | Full and representative forecast trajectories (national and data center), plus data center ranges in 2025, 2028 and 2030 |
+| `figures/range_plot/` | Low / central / high range per institution in benchmark years |
+| `figures/heatmap/` | Pairwise difference heatmaps between institutions and within each institution's scenarios, with the central-case selection tables |
+| `figures/appendix_*_trends/` | One appendix figure per institution |
+| `results/ranking_tables/` | Forecast-level and CAGR rankings (CSV and Excel) |
+| `data/nrel_efs/result/` | The aggregated NREL EFS annual totals |
+| `code/database/` | Schema (`us_dc_energy_forecast_database.sql`: 4 tables in a metadata–value design), one insert script per forecast curve in `Forecast_SQL/` (`01`–`33` national, `001`–`014` data center), the two analysis queries, the ER diagram (`ERD.mwb`), `build_database.sh` and `connect.py` |
+| `code/analysis/` | The scripts that produce `figures/` and `results/`, one folder per figure type |
+| `code/nrel_efs/` | Aggregates NREL EFS hourly load profiles to annual TWh per scenario |
+| `requirements.txt` | Python dependencies |
 
 ## Reproducing the results
 
@@ -57,15 +55,15 @@ Requirements: MySQL 8 and Python 3.11+.
 
 ```bash
 pip install -r requirements.txt
-./build_database.sh -u root -p
+./code/database/build_database.sh -u root -p
 export DC_FORECAST_DB_URL="mysql+mysqlconnector://USER:PASSWORD@127.0.0.1/us_dc_energy_forecast"
-python connect.py
-python range_plot/dc_2030_forecast_range.py
+python code/database/connect.py
+python code/analysis/range_plot/dc_2030_forecast_range.py
 ```
 
-Every analysis script reads the connection string from `DC_FORECAST_DB_URL`. If it is not set, the scripts use a local `root` login without a password. Each script writes its figures or tables into its own folder, so it can be run from any directory.
+Every analysis script reads the connection string from `DC_FORECAST_DB_URL`. If it is not set, the scripts use a local `root` login without a password. Each script writes its figures into `figures/` and its tables into `results/`, so it can be run from any directory.
 
-The NREL scripts in `NREL_EFS_DataProcessing/` are only needed to regenerate `EFS/result/`. To use them, download the nine `EFSLoadProfile_<Electrification>_<Advancement>.zip` archives from the [EFS Load Profiles data release](https://doi.org/10.7799/1593122). The nine CSVs total about 24 GB and are not included here. Unzip each archive and save its CSV as `EFS/<Electrification>_<Advancement>.csv`, for example `EFS/Reference_Rapid.csv`. Then run the matching script, for example `python NREL_EFS_DataProcessing/Reference_Rapid.py`.
+The NREL scripts in `code/nrel_efs/` are only needed to regenerate `data/nrel_efs/result/`. To use them, download the nine `EFSLoadProfile_<Electrification>_<Advancement>.zip` archives from the [EFS Load Profiles data release](https://doi.org/10.7799/1593122). The nine CSVs total about 24 GB and are not included here. Unzip each archive and save its CSV as `data/nrel_efs/<Electrification>_<Advancement>.csv`, for example `data/nrel_efs/Reference_Rapid.csv`. Then run the matching script, for example `python code/nrel_efs/Reference_Rapid.py`.
 
 ## Notes
 

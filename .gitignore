@@ -1,6 +1,6 @@
 # Raw NREL EFS load profiles (~25 GB): download separately, see README
-EFS/*.csv
-EFS/zip/
+data/nrel_efs/*.csv
+data/nrel_efs/zip/
 
 # Python / editor / OS
 __pycache__/
