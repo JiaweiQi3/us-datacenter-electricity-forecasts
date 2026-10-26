@@ -1,6 +1,6 @@
-![U.S. Data Center Electricity Demand Forecasts in the Age of AI](assets/cover.png)
+![U.S. Data Center Electricity Demand Forecasts Analysis in the Age of AI](assets/cover.png)
 
-# U.S. Data Center Electricity Demand Forecasts in the Age of AI
+# U.S. Data Center Electricity Demand Forecasts Analysis in the Age of AI
 
 A structured MySQL database and Python analysis that compare how 16 institutions forecast U.S. electricity demand and U.S. data center electricity demand. The forecasts were collected from public reports, harmonized to TWh, and compared side by side.
 
